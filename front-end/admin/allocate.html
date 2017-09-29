@@ -34,7 +34,7 @@
 <br/>
 <div class="container">
 
-    <a class="waves-effect waves-light btn" style="background-color: #40c4ff">Refresh</a>
+    <a class="waves-effect waves-light btn" style="background-color: #40c4ff" onclick="refreshTable()">Refresh</a>
     <a class="waves-effect waves-light btn" style="background-color: #99c8ff">Confirm Delivery</a>
     <table>
         <thead>
@@ -47,10 +47,54 @@
             <th>Beneficiary Address</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="toChange">
+        <tr>
+            <td>Tan Ah Seng</td>
+            <td>Condensed Milk</td>
+            <td>Condiments</td>
+            <td>150</td>
+            <td>gram</td>
+            <td>100 Ang Mo Kio Ave 6</td>
+        </tr>
+        <tr>
+            <td>Tan Eh Seng</td>
+            <td>Salmon</td>
+            <td>Canned food</td>
+            <td>350</td>
+            <td>gram</td>
+            <td>107 Ang Mo Kio Ave 6</td>
+        </tr>
         </tbody>
     </table>
 </div>
+<button >Click me</button>
+
+<script>
+    function refreshTable() {
+        document.getElementById("toChange").innerHTML = "<tr>" +
+            "<td>Tan Ah Seng</td>" +
+            "<td>Condensed Milk</td>" +
+            "<td>Condiments</td>" +
+            "<td>40</td>" +
+            "<td>gram</td>" +
+            "<td>100 Ang Mo Kio Ave 6</td>" +
+            "</tr>" +
+            "<tr><td>Tan Eh Seng</td>" +
+            "<td>Salmon</td>" +
+            "<td>Canned food</td>" +
+            "<td>100</td>" +
+            "<td>gram</td>" +
+            "<td>107 Ang Mo Kio Ave 6</td></tr>" +
+            "<tr>" +
+            "<td>Tan Mah Seng</td>" +
+            "<td>Salmon</td>" +
+            "<td>Canned food</td>" +
+            "<td>250</td>" +
+            "<td>gram</td>" +
+            "<td>107 Ang Mo Kio Ave 10</td>" +
+            "</tr>";
+    }
+</script>
 <script>$(".button-collapse").sideNav();</script>
 <script src="./allocate.js"></script>
 </body>
