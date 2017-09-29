@@ -32,6 +32,8 @@
 </nav>
 <br/>
 <div class="container">
+    <a class="waves-effect waves-light btn" style="background-color: #4cbf82">Refresh</a>
+    <a class="waves-effect waves-light btn" style="background-color: #5cdc93">Clear All</a>
     <table>
         <thead>
         <tr>
@@ -44,7 +46,7 @@
             <th>Unit of measurement</th>
             <th>Halal</th>
             <th>Status</th>
-            <th>Remarks</th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -56,8 +58,13 @@
             <td>Canned food</td>
             <td>3</td>
             <td>can</td>
-            <td>No</td>
-            <td>rejected</td>
+            <td>Yes</td>
+            <td>preparing food</td>
+            <td>
+                <a class="waves-effect waves-light btn" style="background-color: #c7cdcc">Resend</a>
+                <br/>
+                <a class="waves-effect waves-light btn" style="background-color: #2bdb45">Cancel</a>
+            </td>
         </tr>
         <tr>
             <td>1022017099</td>
@@ -67,8 +74,13 @@
             <td>Perishable</td>
             <td>1</td>
             <td>kilogram</td>
-            <td>Yes</td>
-            <td>delivered</td>
+            <td>No</td>
+            <td>waiting recipient confirmation</td>
+            <td>
+                <a class="waves-effect waves-light btn" style="background-color: #78cd4a">Resend</a>
+                <br/>
+                <a class="waves-effect waves-light btn" style="background-color: #2bdb45">Cancel</a>
+            </td>
         </tr>
         <tr>
             <td>1022017156</td>
@@ -79,7 +91,12 @@
             <td>400</td>
             <td>gram</td>
             <td>No</td>
-            <td>cancelled</td>
+            <td>delivered</td>
+            <td>
+                <a class="waves-effect waves-light btn" style="background-color: #c4c1cd">Resend</a>
+                <br/>
+                <a class="waves-effect waves-light btn" style="background-color: #d9dbdb">Cancel</a>
+            </td>
         </tr>
         </tbody>
     </table>
