@@ -9,7 +9,7 @@
     <script src="../vendor/materialize/js/materialize.min.js"></script>
 <body>
 <nav>
-    <div class="nav-wrapper">
+    <div class="nav-wrapper" style="background-color: #1976d2">
         <a href="index.html" class="brand-logo">ADMIN</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
@@ -38,15 +38,6 @@
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
                 </select>
-                <script>
-                    var $select = $("<select>");
-                    $select.appendTo("#food-cate");
-                    $.each(json, function (i, optgroups) {
-                        $.each(options, function (j, option) {
-                            var $option = $("<option>", {text: option.name, value: option.id});
-                        });
-                    });
-                </script>
                 <br/>
                 <label>Item Type</label>
                 <select class="browser-default">
