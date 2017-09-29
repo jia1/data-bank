@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD:web/META-INF/context.xml
-<Context path="/JP-backend"/>
-=======
-<Context path="/FYP-backend"/>
->>>>>>> 2590292be67c392d3673b4b427da6fcbfd620970:app/backend-app/FYP-backend/web/META-INF/context.xml
