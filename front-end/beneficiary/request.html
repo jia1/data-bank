@@ -1,10 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Insert title here</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="./vendor/jquery-3.2.1.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="./vendor/materialize/css/materialize.min.css">
-    <script src="./vendor/materialize/js/materialize.min.js"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Insert title here</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="../vendor/jquery-3.2.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../vendor/materialize/css/materialize.min.css">
+        <script src="../vendor/materialize/js/materialize.min.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo">Logo</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="request.html">Ask for Food</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="../index.html">Logout</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="request.html">Ask for Food</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <form class="col s12">
+
+                    <div class="row">
+                        Insert dropdown menu for food category here
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="quantity" type="number" class="validate">
+                            <label for="quantity">Quantity</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <script>
+$(".button-collapse").sideNav();
+        </script>
+    </body>
+</html>
