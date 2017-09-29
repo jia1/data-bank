@@ -2,9 +2,9 @@ $('form').submit(function(event) {
     let arr = $(this).serializeArray();
     let obj = {};
     for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i]['name']);
         obj[arr[i]['name']] = arr[i]['value'];
     }
+    /*
     $.ajax({
         url: '',
         method: 'POST',
@@ -19,5 +19,8 @@ $('form').submit(function(event) {
             alert(error);
         }
     });
+    */
+    alert('Your response has been recorded.');
+    location.reload();
     event.preventDefault();
 });
