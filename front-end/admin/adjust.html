@@ -15,23 +15,38 @@
         <ul class="right hide-on-med-and-down">
             <li><a href="adjust.html">Update Inventory</a></li>
             <li><a href="allocate.html">Auto-allocation</a></li>
-            <li><a href="history.html">Delivery History</a></li>
-            <li><a href="../index.html">Log out</a></li>
+            <li><a href="history.html">Historical allocation</a></li>
+            <li><a href="../index.html">Logout</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="adjust.html">Update Inventory</a></li>
+            <li><a href="allocate.html">Auto-allocation</a></li>
+            <li><a href="history.html">Historical allocation</a></li>
+            <li><a href="../index.html">Logout</a></li>
         </ul>
     </div>
 </nav>
 <br/>
 <br/>
 <div>
-    <div class="row">
+    <div class="container">
         <form class="col s6">
             <div>
                 <label>Food Category</label>
-                <select class="browser-default">
+                <select label="food-cate" class="browser-default">
                     <option value="1">Option 1</option>
                     <option value="2">Option 2</option>
                     <option value="3">Option 3</option>
                 </select>
+                <script>
+                    var $select = $("<select>");
+                    $select.appendTo("#food-cate");
+                    $.each(json, function (i, optgroups) {
+                        $.each(options, function (j, option) {
+                            var $option = $("<option>", {text: option.name, value: option.id});
+                        });
+                    });
+                </script>
                 <br/>
                 <label>Item Type</label>
                 <select class="browser-default">
