@@ -12,59 +12,37 @@
 <body>
 <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a href="index.html" class="brand-logo">ADMIN</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="adjust.html">Update Inventory</a></li>
             <li><a href="allocate.html">Auto-allocation</a></li>
-            <li><a href="history.html">Delivery History</a></li>
-            <li><a href="../index.html">Log out</a></li>
+            <li><a href="history.html">Historical allocation</a></li>
+            <li><a href="../index.html">Logout</a></li>
         </ul>
-
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="adjust.html">Update Inventory</a></li>
+            <li><a href="allocate.html">Auto-allocation</a></li>
+            <li><a href="history.html">Historical allocation</a></li>
+            <li><a href="../index.html">Logout</a></li>
+        </ul>
     </div>
 </nav>
 <br/>
 <br/>
-<div class="row">
-    <form class="col s12">
-        <div class="row">
-            <div class="input-field col s6">
-                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
-                <label for="first_name"></label>
-            </div>
-            <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate">
-                <label for="last_name">Last Name</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
-                <label for="disabled">Disabled</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="password" type="password" class="validate">
-                <label for="password">Password</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col s12">
-                <input id="email" type="email" class="validate">
-                <label for="email">Email</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12">
-                This is an inline input field:
-                <div class="input-field inline">
-                    <input id="email" type="email" class="validate">
-                    <label for="email" data-error="wrong" data-success="right">Email</label>
-                </div>
-            </div>
-        </div>
-    </form>
+<div class="container">
+<a class="waves-effect waves-light btn">Refresh</a>
+    <table>
+        <thead>
+        <tr>
+            <th>Recipient</th>
+            <th>Address</th>
+            <th>Food type</th>
+            <th>Quantity</th>
+            <th>Unit of measurement</th>
+        </tr>
+        </thead>
+    </table>
 </div>
 <script>$(".button-collapse").sideNav();</script>
 </body>

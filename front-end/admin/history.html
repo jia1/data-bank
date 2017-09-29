@@ -12,32 +12,38 @@
 <body>
 <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a href="index.html" class="brand-logo">ADMIN</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="adjust.html">Update Inventory</a></li>
             <li><a href="allocate.html">Auto-allocation</a></li>
-            <li><a href="history.html">Delivery History</a></li>
-            <li><a href="../index.html">Log out</a></li>
+            <li><a href="history.html">Historical allocation</a></li>
+            <li><a href="../index.html">Logout</a></li>
         </ul>
-
+        <ul class="side-nav" id="mobile-demo">
+            <li><a href="adjust.html">Update Inventory</a></li>
+            <li><a href="allocate.html">Auto-allocation</a></li>
+            <li><a href="history.html">Historical allocation</a></li>
+            <li><a href="../index.html">Logout</a></li>
+        </ul>
     </div>
 </nav>
 <br/>
-<br/>
-<table>
-    <thead>
-    <tr>
-        <th>Delivery ID</th>
-        <th>Time</th>
-        <th>Recipient</th>
-        <th>Address</th>
-        <th>Food type</th>
-        <th>Quantity</th>
-        <th>Unit of measurement</th>
-    </tr>
-    </thead>
+<div class="container">
+    <table>
+        <thead>
+        <tr>
+            <th>Delivery ID</th>
+            <th>Time</th>
+            <th>Recipient</th>
+            <th>Address</th>
+            <th>Food type</th>
+            <th>Quantity</th>
+            <th>Unit of measurement</th>
+        </tr>
+        </thead>
 
-</table>
+    </table>
+</div>
 <script>$(".button-collapse").sideNav();</script>
 </body>
