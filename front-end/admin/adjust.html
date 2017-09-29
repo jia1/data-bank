@@ -10,7 +10,7 @@
 <body>
 <nav>
     <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
+        <a href="#!" class="brand-logo">ADMIN</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
             <li><a href="adjust.html">Update Inventory</a></li>
@@ -22,54 +22,62 @@
 </nav>
 <br/>
 <br/>
-<div class="row">
-    <form class="col s12 m6">
-        <div>
-            <label>Food Category</label>
-            <select class="browser-default">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-            <br/>
-            <label>Item Type</label>
-            <select class="browser-default">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-            <br/>
-            <div class="input-field col s12">
-                <input id="quantity" type="text" class="validate">
-                <label class="active" for="quantity">Quantity</label>
+<div>
+    <div class="row">
+        <form class="col s6">
+            <div>
+                <label>Food Category</label>
+                <select class="browser-default">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <br/>
+                <label>Item Type</label>
+                <select class="browser-default">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <br/>
+                <div class="input-field col s12">
+                    <input id="quantity" type="text" class="validate">
+                    <label class="active" for="quantity">Quantity</label>
+                </div>
+                <br/>
+                <label>Unit of measurement</label>
+                <select class="browser-default">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <br/>
+                <label>Halal</label>
+                <select class="browser-default">
+                    <option value="1">YES</option>
+                    <option value="2">NO</option>
+                </select>
+                <br/>
+                <div class="input-field col s12">
+                    <input id="remarks" type="text" class="validate">
+                    <label class="active" for="remarks">Remarks</label>
+                </div>
+                <br/>
+                <label>Pick up area</label>
+                <select class="browser-default">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
             </div>
             <br/>
-            <label>Unit of measurement</label>
-            <select class="browser-default">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
             <br/>
-            <label>Halal</label>
-            <select class="browser-default">
-                <option value="1">YES</option>
-                <option value="2">NO</option>
-            </select>
-            <br/>
-            <div class="input-field col s12">
-                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                <label for="textarea1">Remarks</label>
-            </div>
-            <br/>
-            <label>Pick up area</label>
-            <select class="browser-default">
-                <option value="1">Option 1</option>
-                <option value="2">Option 2</option>
-                <option value="3">Option 3</option>
-            </select>
-        </div>
-    </form>
+            <a class="waves-effect waves-light btn">Submit</a>
+        </form>
+
+    </div>
+    <br/>
+
 </div>
 <script>$(".button-collapse").sideNav();</script>
 </body>
