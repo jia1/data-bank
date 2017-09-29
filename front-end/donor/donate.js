@@ -1,12 +1,13 @@
+const baseUrl = '';
+
 $('form').submit(function(event) {
     let arr = $(this).serializeArray();
-    let obj = {};
+    let obj = {donorId: '1'};
     for (let i = 0; i < arr.length; i++) {
-        console.log(arr[i]['name']);
         obj[arr[i]['name']] = arr[i]['value'];
     }
     $.ajax({
-        url: '',
+        url: '/donor/insert',
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -14,6 +15,7 @@ $('form').submit(function(event) {
         data: obj,
         success: (res) => {
             alert('Your response has been recorded.');
+            location.reload();
         },
         error: (xhr, status, error) => {
             alert(error);

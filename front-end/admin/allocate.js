@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    /*
     $.ajax({
         url: '',
         method: 'GET',
@@ -12,5 +13,7 @@ $(document).ready(function() {
             alert(error);
         }
     });
+    */
+    alert('Allocation done.');
     event.preventDefault();
 });
